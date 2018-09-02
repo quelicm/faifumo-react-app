@@ -1,0 +1,48 @@
+:root {
+  --mainColor: #12345678;
+}
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+
+
+/* This comment will be removed */
+body {
+  margin: 0;
+  background: var(--mainColor);
+  padding: 0;
+  font-family: system-ui;
+
+  & .button {
+    margin-bottom: 20px;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background:rebeccapurple;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+}
+
+article {
+  margin: 10px;
+
+  &::after {
+    display: block;
+    background: url('./logo.svg') no-repeat;
+    width: 100px;
+    height: 100px;
+    content: '';
+  }
+}
+
+article :--heading + p {
+  border: 1px solid #333;
+  background: #fff;
+  padding: 10px;
+}
