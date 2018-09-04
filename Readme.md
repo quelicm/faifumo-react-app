@@ -25,10 +25,9 @@ An other boilerplate to easy begin to development react apps.
 
 ## TODO
 
-- [ ] Re-use current tab instead of open a new one. https://github.com/webpack-contrib/webpack-serve/issues/117
+- [x] Re-use current tab instead of open a new one. https://github.com/webpack-contrib/webpack-serve/issues/117
 - [ ] Added PWA support
 
 ## Issues
 
 - [ ] PossCss not remove the comments
-
