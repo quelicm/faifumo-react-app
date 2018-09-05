@@ -9,6 +9,7 @@ import dotenv from 'dotenv';
 import dotenvExpand from 'dotenv-expand';
 import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import CompressionPlugin from 'compression-webpack-plugin';
+import { execSync } from 'child_process'
 
 import path from 'path';
 
@@ -99,8 +100,21 @@ const webpackConfig = {
   serve: {
     host: process.env.HOST,
     port: process.env.PORT,
-    open: true,
     hot: true,
+    on: {
+      listening: () => {
+        execSync('ps cax | grep "Google Chrome"')
+        execSync(
+          `osascript chrome.applescript "${encodeURI(
+            `http://localhost:${process.env.PORT}`
+          )}"`,
+          {
+            cwd: __dirname,
+            stdio: 'ignore',
+          }
+        )
+      },
+    },
   },
   resolve: resolveOptions,
 };
