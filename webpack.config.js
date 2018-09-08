@@ -64,17 +64,6 @@ const webpackConfig = {
             loader: require.resolve('postcss-loader'),
             options: {
               ident: 'postcss',
-              plugins: () => [
-                stripInlineComments(),
-                stylelint(),
-                postcssPresetEnv({
-                  stage: 2,
-                  features: {
-                    'nesting-rules': true,
-                    'custom-selectors': true,
-                  },
-                }),
-              ],
             },
           },
         ],
