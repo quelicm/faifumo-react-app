@@ -133,7 +133,7 @@ export default (env, argv) => {
         },
       }),
       new CompressionPlugin({
-        asset: '[path].gz[query]',
+        filename: '[path].gz[query]',
         algorithm: 'gzip',
         test: /\.js$|\.css$|\.html$/,
       }),
