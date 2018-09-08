@@ -6,6 +6,13 @@ An other boilerplate to easy begin to development react apps.
 
 - Min Node 8+, recommended 10+
 
+## Install
+
+Recomended to use `yarn`
+
+1. `yarn install`
+2. `yarn start`
+
 ## Features
 
 - [x] Support Node 8+ with esm 
