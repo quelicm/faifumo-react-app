@@ -23,7 +23,7 @@ Recomended to use `yarn`
 - [ ] Docz for documenting the components (Todo: fix warning dependencies or change tool for doc)
 - [x] Eslint with Airbnb rules + react support 
 - [x] Stylelint + prettier-stylelint + concentric css
-- [x] PostCss Loader config with stage2 + custom selectors
+- [x] PostCss Loader config with stage2 + custom selectors with separate postcss.config.js
 - [x] Browserslist
 - [x] DotEnv support
 - [x] Jest + react-testing-library
@@ -37,7 +37,7 @@ Recomended to use `yarn`
 
 ## Issues
 
-- [ ] PossCss not remove the comments
+- [ ] PossCss remove the inline comments but this is not supported by stylelint
 
 ## Contributors
 
