@@ -22,12 +22,16 @@ An other boilerplate to easy begin to development react apps.
 - [x] Jest + react-testing-library
 - [x] File loader 
 - [x] Webpack build optimization 
+- [x] Re-use current tab instead of open a new one. https://github.com/webpack-contrib/webpack-serve/issues/117
 
 ## TODO
 
-- [x] Re-use current tab instead of open a new one. https://github.com/webpack-contrib/webpack-serve/issues/117
 - [ ] Added PWA support
 
 ## Issues
 
 - [ ] PossCss not remove the comments
+
+## Contributors
+
+- [Lionel - elrumordelaluz](https://github.com/elrumordelaluz)
