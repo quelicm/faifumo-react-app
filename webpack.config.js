@@ -103,16 +103,20 @@ const webpackConfig = {
     hot: true,
     on: {
       listening: () => {
-        execSync('ps cax | grep "Google Chrome"')
-        execSync(
-          `osascript chrome.applescript "${encodeURI(
-            `http://localhost:${process.env.PORT}`
-          )}"`,
-          {
-            cwd: __dirname,
-            stdio: 'ignore',
-          }
-        )
+        try {
+          execSync('ps cax | grep "Google Chrome"')
+          execSync(
+            `osascript chrome.applescript "${encodeURI(
+              `http://localhost:${process.env.PORT}`
+            )}"`,
+            {
+              cwd: __dirname,
+              stdio: 'ignore',
+            }
+          )
+        } catch(err) {
+          // …
+        }
       },
     },
   },
