@@ -12,8 +12,12 @@ class Button extends PureComponent {
     ]).isRequired,
   }
 
+  static defaultProps = {
+    type: 'submit',
+  }
+
   render() {
-    const { type = 'submit', children } = this.props;
+    const { type, children } = this.props;
     return <button className="button" type={ type }>{ children }</button>;
   }
 }
