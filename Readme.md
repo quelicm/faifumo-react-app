@@ -4,7 +4,7 @@ An other boilerplate to easy begin to development react apps.
 
 ## Requirements
 
-- Min Node 8+, recommended 10+
+- Min Node 8.9.6+, recommended 10+
 
 ## Install
 
