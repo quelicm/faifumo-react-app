@@ -1,6 +1,6 @@
 {
   "name": "faifumo-react-app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An other boilerplate to easy begin to development react apps.",
   "main": "index.js",
   "scripts": {
