@@ -24,8 +24,8 @@ const resolveOptions = {
 const webpackConfig = {
   entry: ['./src/index.js'],
   output: {
+    path: path.resolve(__dirname, 'public'),
     filename: 'bundle.[hash].js',
-    publicPath: '/',
   },
   optimization: {
     splitChunks: {
@@ -84,8 +84,8 @@ const webpackConfig = {
     new DotenvPlugin(),
   ],
   serve: {
-    host: process.env.HOST,
-    port: process.env.PORT,
+    host: process.env.HOST || 'localhost',
+    port: process.env.PORT || 3001,
     hot: true,
     on: {
       listening: () => {
